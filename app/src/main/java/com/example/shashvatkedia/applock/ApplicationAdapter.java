@@ -38,7 +38,7 @@ public class ApplicationAdapter extends ArrayAdapter<ApplicationInfo> {
             icon.setImageDrawable(icon1);
         }
         catch(PackageManager.NameNotFoundException e){
-            Log.e("Hash","NameNotFound Error");
+            Log.e("#","NameNotFound Error");
         }
         return convertView;
     }
