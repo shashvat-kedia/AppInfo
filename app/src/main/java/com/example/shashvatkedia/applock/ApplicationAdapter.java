@@ -31,7 +31,7 @@ public class ApplicationAdapter extends ArrayAdapter<ApplicationInfo> {
         }
         ApplicationInfo a=getItem(position);
         TextView info=(TextView) convertView.findViewById(R.id.AppName);
-        info.setText(a.packageName);
+        info.setText(a.applicationInfo.loadLabel(p).toString());
         ImageView icon=(ImageView) convertView.findViewById(R.id.icon1);
         try {
             Drawable icon1 = p.getApplicationIcon(info.getText().toString());
